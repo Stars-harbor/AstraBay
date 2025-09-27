@@ -847,7 +847,7 @@ class tabs {
 
   static expireAddListener() {
     const { expire } = GLOBAL_CONFIG;
-    if (!expire) return;
+    if (!expire || PAGE_CONFIG.expire === false) return;
     const list = document.querySelectorAll(".post-meta-date time");
     const post_date = list.length
       ? list[list.length - 1]

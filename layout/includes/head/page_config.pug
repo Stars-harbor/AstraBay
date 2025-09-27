@@ -10,4 +10,5 @@ script#config-diff.
         comment: !{!!page.comment},
         ai_text: !{is_post && theme.post.ai.enable && page.ai_text ? "'"+ page.ai_text+"'" : false},
         color: !{page.color ? "'"+ page.color+"'" : false},
+        expire: !{page.expire !== undefined ? page.expire : true},
     }

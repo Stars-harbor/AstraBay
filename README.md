@@ -6,9 +6,9 @@
 
 ---
 
-Astrabay最新主题版本：1.4.2
+Astrabay最新主题版本：1.4.3
 
-已同步的solitude版本：3.0.20 dev（Commit db65604）
+已同步的solitude版本：3.0.21
 
 ---
 
@@ -25,6 +25,8 @@ Astrabay最新主题版本：1.4.2
 - 优化了关于页赞助部分的内容显示逻辑
 - 修改了推荐文章功能逻辑
 - 仍然支持站点背景图功能
+- 支持对单个文章关闭文章过期功能
+- 关于页技能点显示逻辑、循环动画、循环逻辑优化
 
 详细区别与部分使用方法请查看：[Astrabay主题特性介绍](https://blog.starsharbor.com/posts/Astrabay-features/)
 
