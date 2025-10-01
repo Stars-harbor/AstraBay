@@ -21,12 +21,8 @@ mixin postFooterBar()
       
       .footer-bar-description= theme.post.footer.desc
       
-      +conditionalWrapper(theme.post.footer.button.enable)
-        +link(
-          theme.post.footer.button.url,
-          theme.post.footer.button.name,
-          { class: 'footer-bar-link' }
-        )
+      if theme.post.footer.button.enable
+        a.footer-bar-link(href=url_for(theme.post.footer.button.url))= theme.post.footer.button.name
 //- 页脚交易链接组件
 mixin footerDeals()
   if information.left || information.right || information.author
