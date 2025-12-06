@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-astrabay",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "基于Solitude主题二次开发的主题，存在一点点独特特性",
   "main": "package.json",
   "scripts": {
