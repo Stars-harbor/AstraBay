@@ -6,9 +6,9 @@
 
 ---
 
-Astrabay最新主题版本：1.4.3
+Astrabay最新主题版本：1.4.4
 
-已同步的solitude版本：3.0.21
+已同步的solitude版本：3.0.21 dev
 
 ---
 
