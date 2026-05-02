@@ -246,7 +246,7 @@
   > .tk-comment
     margin-top 0 !important
     margin-bottom 0.5rem !important
-    background rgba(255, 255, 255, 0.5)
+    background var(--highlight-bg)
     transition .3s
     border-radius 12px
     padding .5rem .5rem 0 .5rem
@@ -339,11 +339,11 @@
       width 100% !important
 
   .tk-action
-    > a:nth-child(1),a:nth-child(2)
+    > button:nth-child(1),button:nth-child(2)
       display none !important
     
     .tk-action-link
-      padding 0px 5px
+      padding 0px 5px !important
       font-size 14px
 
     .tk-action-count
