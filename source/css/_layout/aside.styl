@@ -29,7 +29,7 @@
     border-radius var(--radius)
     transition all .3s
     overflow hidden
-    background var(--efu-card-bg)
+    backdrop-filter blur(15px)
     box-shadow var(--efu-shadow-black)
     border var(--style-border)
     user-select none
@@ -156,7 +156,7 @@
       .name
         font-weight 700
         color var(--efu-card-bg)
-        font-size 20px
+        font-size 18px
         line-height 1
         margin-bottom 5px
 
@@ -410,6 +410,7 @@
 
 if hexo-config('comment.newest_comment.enable')
   .card-recent-comment
+    padding .5rem
     .recent-comment-more
       margin-left auto
       margin-right .5rem
@@ -432,7 +433,7 @@ if hexo-config('comment.newest_comment.enable')
       width: 100%
       display: flex
       flex-direction: row
-      height: 80px
+      height: 70px
       transition: .3s
       position: relative
 
@@ -440,9 +441,9 @@ if hexo-config('comment.newest_comment.enable')
         border-bottom var(--style-border-dashed)
 
       .thumbnail img
-        width: 60px
-        height: 60px
-        margin-right: 8px
+        width: 50px
+        height: 50px
+        margin-right: 2px
         border-radius: 12px
         img
           width 140%
@@ -462,6 +463,8 @@ if hexo-config('comment.newest_comment.enable')
         .comment
           overflow hidden
           text-overflow ellipsis
+          white-space nowrap
+          font-size 14px
         .title
           display -webkit-box
           font-size 14px

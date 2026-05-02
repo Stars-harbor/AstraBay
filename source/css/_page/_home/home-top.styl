@@ -82,7 +82,7 @@
       flex-direction column
       flex 1 1 30%
       align-items flex-start
-      background var(--efu-card-bg)
+      backdrop-filter blur(15px)
       border-radius 12px
       overflow hidden
       height 164px
@@ -147,6 +147,9 @@
 
           &:hover
             color var(--efu-fontcolor)
+          
+          +maxWidth768()
+            font-size 14px
 
     .todayCard
       display none

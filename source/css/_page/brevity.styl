@@ -1,6 +1,6 @@
 if hexo-config('brevity.home_mini')
   #bbTimeList
-    background var(--essay-bg)
+    backdrop-filter blur(15px)
     border-radius 12px
     display flex
     white-space nowrap
@@ -26,8 +26,7 @@ if hexo-config('brevity.home_mini')
 
     +maxWidth768()
       margin 0
-      background var(--essay-bg)
-      border none
+      border var(--style-border-always)
       margin-bottom .5rem
 
   i.bber-logo,
@@ -281,7 +280,7 @@ if hexo-config('brevity.enable')
             flex-wrap nowrap
             justify-content space-between
             align-items flex-start
-            background var(--efu-card-bg)
+            backdrop-filter blur(15px)
             margin-right .5rem
             margin-bottom .5rem
             box-shadow var(--efu-shadow-border)

@@ -23,10 +23,6 @@ mixin postTips()
     if post.prev == null && is_home()
       span.original= _p('home.new')
 
-    //- 阅读链接
-    - var readLinkOptions = { class: 'unvisited-post' }
-    +link(post.path, _p('home.read'), readLinkOptions)
-
 //- 文章信息组件
 mixin postInfo()
   .recent-post-info-top

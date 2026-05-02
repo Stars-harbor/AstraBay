@@ -1,0 +1,108 @@
+div#swiper_container
+  width 100%
+  height 12rem
+  position relative
+  transition all .3s
+  overflow hidden
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+
+  .blog-slider__pagination .swiper-pagination-bullet
+    margin 0 8px
+    width 11px
+    height 11px
+    display inline-block
+    border-radius 99px
+    background var(--efu-gray)
+    opacity .2
+    transition all .3s
+
+  .blog-slider__pagination .swiper-pagination-bullet-active
+    opacity 1
+    background var(--efu-main)
+    height 30px
+
+  .blog-slider__pagination
+    position absolute
+    z-index 21
+    text-align center
+    display flex
+    justify-content space-between
+    flex-direction column
+    height 60%
+
+#swiperBox.recent-post-item
+  width 100%
+  margin-top 0
+  flex 1 1 100%
+  max-width none
+  +maxWidth798()
+    display none
+
+#swiperBox
+  .blog-slider__item.swiper-slide
+    padding 1rem
+    display flex
+    justify-content space-between
+    flex-direction row
+    height 100%
+
+    &:hover
+      .blog-slider__img
+        img
+          transform scale(1.1)
+          transition all .3s
+
+      .blog-slider__title
+        color var(--efu-main)
+        transition all .3s
+
+  .blog-slider__img
+    border-radius 12px
+    overflow hidden
+    width 35%
+    height 100%
+    transition all .3s
+    cursor pointer
+
+    img
+      width 100%
+      height 100%
+      object-fit cover
+
+  .blog-slider__content
+    margin 0 2rem 0 1rem
+    position relative
+    width 65%
+    display flex
+    align-items left
+    flex-direction column
+    height 100%
+
+    .article-meta-wrap
+      padding 0
+      bottom 0
+
+      .tags-punctuation
+        &:hover
+          color var(--efu-main)
+          transition all .3s
+
+    .blog-slider__title
+      font-size 1.5rem
+      font-weight 600
+      color var(--efu-fontcolor)
+      margin 0
+      transition all .3s
+      cursor pointer
+
+    .blog-slider__desc
+      -webkit-line-clamp: 4;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      opacity: 0.8;
+      font-size: 14px;
+      line-height: 1.8;

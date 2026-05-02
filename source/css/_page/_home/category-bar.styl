@@ -1,6 +1,6 @@
 #category-bar
   padding .4rem .7rem
-  background var(--efu-card-bg)
+  backdrop-filter blur(15px)
   border-radius 12px
   display flex
   white-space nowrap
@@ -29,6 +29,7 @@
     background #00000000
     padding 0 1rem
     border none
+    backdrop-filter none
 
   .category-bar-right
     display flex
@@ -89,10 +90,12 @@
         height 30px
 
         +maxWidth768()
-          border-radius 50px
-          background var(--efu-card-bg)
+          border-radius 12px
+          backdrop-filter blur(15px)
           border var(--style-border-always)
-          padding 21px 16px
+          padding 10px
+          height 45px
+          margin-right 0
 
       &.select
         order -1

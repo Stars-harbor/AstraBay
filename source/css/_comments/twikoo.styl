@@ -15,6 +15,20 @@
       > div.tk-comments-title
         > span:nth-child(1)
           display none !important
+        margin-bottom 0px
+        font-size 16px
+        
+        .tk-comments-sort
+          .tk-sort-select
+            background var(--efu-card-bg)
+            color var(--efu-fontcolor)
+            border var(--style-border-always)
+            border-radius 12px
+            padding 4px
+            font-size 14px
+
+      > div.tk-expand-wrap
+        margin-bottom 8px
 
     > div.tk-submit
       > div.tk-row.actions
@@ -28,19 +42,21 @@
 .twikoo-info
   color var(--efu-secondtext)
 
-.tk-action
-  .tk-action-link:first-child
-    display none
-
 .tk-action-link
   color var(--efu-lighttext) !important
   cursor pointer
   user-select none
-  padding 0 12px
+  padding 0 12px !important
   transition all .3s
-  border-radius 8px
+  border-radius 8px !important
   background-color var(--efu-secondbg)
-  border var(--style-border-always)
+  border var(--style-border-always) !important
+
+  .tk-action-icon
+    margin 0 .25rem
+
+  .tk-action-count
+    margin 0
 
   &:hover
     background-color var(--efu-lighttext)
@@ -170,7 +186,7 @@
   display none
 
 .tk-icon.__comments
-  margin-left 0 !important
+  height 1em !important
 
 .tk-row.actions
   margin-bottom 0 !important
@@ -230,11 +246,10 @@
   > .tk-comment
     margin-top 0 !important
     margin-bottom 0.5rem !important
-    background var(--efu-card-bg)
+    background rgba(255, 255, 255, 0.5)
     transition .3s
     border-radius 12px
-    padding 0
-    padding-top 0.5rem
+    padding .5rem .5rem 0 .5rem
     border none
     border-top var(--style-border-dashed)
 
@@ -256,9 +271,6 @@
   .tk-icon.__comments
     left .5rem
 
-.tk-icon
-  position absolute
-
 .tk-comments-no
   display none !important
 
@@ -267,11 +279,10 @@
 
 .tk-replies
   > .tk-comment
-    background var(--efu-card-bg)
     border-top var(--style-border-dashed)
     border-radius 12px
     transition .3s
-    padding 1rem 0 0
+    padding .5rem .5rem 0 .5rem
     margin-top 0
 
 .tk-content
@@ -327,9 +338,16 @@
       margin-left 0 !important
       width 100% !important
 
-  .tk-icon
-    position absolute
-    right 0
+  .tk-action
+    > a:nth-child(1),a:nth-child(2)
+      display none !important
+    
+    .tk-action-link
+      padding 0px 5px
+      font-size 14px
+
+    .tk-action-count
+      font-size 14px
 
 img.tk-avatar-img
   height 32px !important
@@ -371,7 +389,7 @@ img.tk-avatar-img
   border none
 
 .el-textarea__inner
-  background-color var(--efu-secondbg)
+  background-color var(--efu-secondbg) !important
   color var(--efu-fontcolor) !important
   border-radius 12px !important
   min-height 100px !important

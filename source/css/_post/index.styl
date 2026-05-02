@@ -9,8 +9,6 @@ if hexo-config('comment.commentBarrage')
 
 @import "tools"
 
-@import "pagination"
-
 if hexo-config('google_adsense.enable')
   @import "ads.styl"
 
@@ -147,4 +145,4 @@ if hexo-config('post.ai.enable')
   border var(--style-border)
   border-radius var(--radius)
   box-shadow var(--efu-shadow-border)
-  background var(--efu-card-bg)
+  backdrop-filter blur(30px)
