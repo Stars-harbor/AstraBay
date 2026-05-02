@@ -128,19 +128,19 @@ const initObserver = () => {
   const paginationElement = document.getElementById("pagination");
   const commentBarrageElement = document.querySelector(".comment-barrage");
 
-  if (commentElement && paginationElement) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        paginationElement.classList.toggle("show-window", entry.isIntersecting);
-        if (GLOBAL_CONFIG.comment.commentBarrage) {
-          commentBarrageElement.style.bottom = entry.isIntersecting
-            ? "-200px"
-            : "0px";
-        }
-      });
+  if (!commentElement) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      paginationElement?.classList.toggle("show-window", entry.isIntersecting);
+      if (GLOBAL_CONFIG.comment.commentBarrage && commentBarrageElement) {
+        commentBarrageElement.style.bottom = entry.isIntersecting
+          ? "-200px"
+          : "0px";
+      }
     });
-    observer.observe(commentElement);
-  }
+  });
+  observer.observe(commentElement);
 };
 
 const addCopyright = () => {
